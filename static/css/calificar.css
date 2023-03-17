@@ -1,0 +1,60 @@
+.contenedor-main-archivo{
+    display: grid;
+    grid-template-areas: "uno" "dos";
+}
+
+.revisar{
+    grid-area: dos;
+    
+    padding: 10px;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    
+
+}
+.documento{
+    grid-area: uno;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: s;
+}
+
+.revisar form div{
+    margin: 20px;
+    padding: 10px;
+}
+
+button{
+    padding: 20px;
+}
+
+input{
+    padding: 5px;
+}
+
+.sinborde{
+    border: 0;
+    outline: none;
+    border:none;
+}
+
+embed{
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 1000px){
+    .contenedor-main-archivo{
+        display: grid;
+        grid-template-areas: "uno dos";
+    }
+}

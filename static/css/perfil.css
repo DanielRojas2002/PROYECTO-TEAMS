@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --btndoit:#F29E38;
+    --btnpeligro:#F23827;
+    --btnprimario:#186B8C;
+    --btnsecundario:#55C1D9;
+    --btndoit2:#F28729;
+    --colorprincipal:#5C5470;
+}
+
+body{
+    display: grid;
+    
+    grid-template-areas: "columna1 ";
+    background-image: url("../img/indexfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor{
+    grid-area: columna1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+.contenedor-atras{
+    margin-top: 30px;
+
+}
+.contenedor-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contenedor-datos{
+
+    margin: 10px;
+}
+.contenedor-datos p{
+    margin: 5px;
+}
+.contenedor-botones{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+
+.contenedor-img{
+    height:100px;
+    width: 80%;
+    margin: auto;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-img img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+table{
+
+    width: 100%;
+}
+
+.datos-0{
+    margin: 20px;
+}
+.datos{
+    overflow: auto;
+    height: 120px;
+}
+td,th{
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+
+.sinborde{
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+.sinborde:focus{
+    border-radius: 5px;
+    border-bottom: 2px solid var(--btndoit2);
+    transition: .4s border;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+}

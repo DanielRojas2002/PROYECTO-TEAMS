@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HM | Pefil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../static/css/cambiarcontraseña.css">
+    <link rel="stylesheet" href="../static/css/fuentes.css">
+    <link rel="stylesheet" href="../static/css/botones.css">
+    <link href="../static/icon/css/uicons-bold-rounded.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+
+        
+        <div class="titulo">
+            <h1>CAMBIO DE CONTRASEÑA</h1>
+        </div>
+        <div class="contenedor-header">
+            
+            <div class="contenedor-atras">
+                <div class="contenedor-btn-atras">
+                    <a href="../GRUPO/homegrupos.html" class="boton dos"><span><i class=" fi-br-arrow-small-left"></i></span></a>
+                </div>
+            </div>
+            
+           
+
+           
+            
+        </div>
+        
+        <div class="contenedor-forms">
+            <form action="">
+                <input class="input sinborde"  type="password" placeholder="Ingrese su nueva Contraseña:">
+                <input  class="input sinborde" type="password" placeholder="Ingrese su nueva Contraseña otra vez:">
+            </form>
+        </div>
+        <div class="contenedor-botones">
+            <a href="#openModal" class="boton dos"><span>Cambiar Contraseña</span></a>
+        </div>
+    </div>
+
+    
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close"><i class=" fi-br-cross-small"></i></a>
+            <h2>¿Estas Seguro de Cambiar tu contraseña?</h2>
+            <div class="respuestas">
+                <a  class="si" href="#exito">SI</a>
+                <a  class="no" href="#close" title="Close" >NO</a>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="exito" class="modalDialog">
+        <div>
+            <a href="../ALUMNO/perfil.html" title="Close" class="close"><i class=" fi-br-cross-small"></i></a>
+            <h2>La contraseña se cambio exitosamente</h2>
+           
+           
+        </div>
+    </div>
+</body>
+</html>

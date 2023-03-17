@@ -1,0 +1,290 @@
+:root{
+    --btndoit:#F29E38;
+    --btnpeligro:#F23827;
+    --btnprimario:#186B8C;
+    --btnsecundario:#55C1D9;
+    --btndoit2:#F28729;
+    --colorprincipal:#5C5470;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner_flex a{
+    text-align: none;
+    text-decoration: none;
+}
+.banner_container{
+    display: grid;
+    grid-template-areas: " titulo" "foto" ;
+    margin: 20px;
+}
+
+.banner_tittle{
+    grid-area: titulo;
+    align-items: center;
+    
+}
+
+.banner_img{
+    grid-area: foto;
+    margin: auto;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "op1" "op2" "op3";
+    background:var(--colorprincipal);
+}
+
+.bg_animate{
+    grid-area: op1;
+}
+
+main{
+    grid-area: op3;
+    
+}
+
+
+.banner_flex{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.banner_flex a{
+    margin: 20px;
+    text-align: center;
+}
+
+/* encabezado */
+.header_nav{
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+} 
+.header_nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-left: 20px;
+}
+/* código de Taller automotriz IM23 */
+.header_nav h1{
+    line-height: 50px;
+    color: #fff;
+    font-family: sans-serif;
+}
+/* ajuste de logo piston */
+.header_nav img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.banner_tittle h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 200;
+    margin-left: 10px;
+    text-align: left;
+   
+}
+/* link Contactanos | inicio */
+.banner_tittle .llamanos{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background:#FFAC41;
+    padding: 20px;
+    border-radius: 8px;
+}
+.banner_tittle .llamanos:hover{
+    color: #FA7D09;
+    font-weight: bold;
+}
+/* animacion y tamaño del civic */
+.banner_img{
+    animation: movimiento 2.5s linear infinite;
+}
+.banner_img img{
+    width: 500px;
+    display: block;
+}
+
+/* burbujas */
+
+.bubbles{
+    visibility: hidden;
+}
+.bubble{
+    opacity: .3;
+    position: absolute;
+    bottom: -150;
+    left: 5%;
+    animation: bubbles 3s linear infinite;
+}
+
+.bubble img{
+    height: 100px;
+    width: 100px;
+}
+.bubble:nth-child(1){
+    
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+.bubble:nth-child(2){
+    
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+.bubble:nth-child(3){
+   
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+.bubble:nth-child(4){
+   
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+.bubble:nth-child(5){
+   
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(6){
+    
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+.bubble:nth-child(7){
+    
+    left: 40%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+.bubble:nth-child(8){
+   
+    left: 50%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.targeta1{
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+}
+.targeta1_titulo{
+    text-align: center;
+}
+.targeta1_target{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-img{
+    padding: 20px;
+    height: 600px;
+    width: 100%;
+    margin: 10px;
+}
+.contenedor-img img{
+    height: 100%;
+    width: 100%;
+}
+.contenedor-img p{
+    text-align: center;
+}
+
+.targeta1 h1,p{
+    color: #fff;
+}
+
+/* para aplicar el movimiento de las burbujas */
+@keyframes bubbles{
+    0%{
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    30%{
+        transform: translateX(30px);
+        visibility: visible;
+    }
+    50%{
+        opacity: .4;
+        visibility: visible;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+/* para aplicar el movimiento del carro */
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .banner_container{
+        display: grid;
+        grid-template-areas: " titulo foto" ;
+    }
+
+    body{
+        display: grid;
+        grid-template-areas: "op1" "op2" "op3";
+        background:var(--colorprincipal);
+    }
+
+    .banner_flex{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .targeta1_target{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contenedor-img{
+        padding: 20px;
+        height: 200px;
+        width: 100%;
+        margin: 10px;
+    }
+}

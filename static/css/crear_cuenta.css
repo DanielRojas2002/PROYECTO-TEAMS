@@ -1,0 +1,131 @@
+:root{
+    --btndoit:#F29E38;
+    --btnpeligro:#F23827;
+    --btnprimario:#186B8C;
+    --btnsecundario:#55C1D9;
+    --btndoit2:#F28729;
+    --colorprincipal:#5C5470;
+
+}
+
+h1{
+    color: #fff;
+}
+
+body{
+    background-image: url("../img/indexfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    min-height: 100vh;
+    
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "section1" "section2";
+    height: 60%;
+    width: 70%;
+    background:var(--btnprimario);
+}
+
+.contenedor__section1{
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    background:var(--btnprimario);
+    border-bottom: 2px solid #fff;
+
+}
+
+
+.contenedor__section2{
+    grid-area: section2;
+    margin: 10px;
+    display:grid;
+    grid-template-areas: "login" "foto";
+}
+
+.contenedor__section2_sec1{
+    grid-area: login;
+    background:var(--btnprimario);
+    border-radius: 30px;
+    padding: 20px;
+}
+.contenedor-botones-0{
+    width: 20%;
+    margin: 20px;
+}
+
+.contenedor-botones-0 svg{
+    height: 30px;
+    width: 30px;
+}
+.contenedor-botones {
+	width: 50%;
+    margin: 20px;
+}
+
+
+
+.contenedor__sec1_texto{
+    margin-left: 15px;
+    
+   
+}
+
+svg{
+    height: 60px;
+    width: 50px;
+}
+
+.contenedor__section2_sec2{
+    grid-area: foto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedor__section2_sec2 img{
+   height: 60%;
+   width: 60%;
+}
+
+.sinborde{
+    border: 0;
+    outline: none;
+    border:none;
+}
+
+.sinborde:focus{
+    border-radius: 5px;
+    border-bottom: 3px solid #000;
+}
+
+@media only screen and (min-width: 1000px){
+
+    .contenedor__section2{
+        grid-area: section2;
+        margin: 10px;
+        display:grid;
+        grid-template-areas: "login foto";
+    }
+    .contenedor__section1{
+        grid-area: section1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+        background:var(--btnprimario);
+        border-bottom: 2px solid #fff;
+    
+    }
+
+}
